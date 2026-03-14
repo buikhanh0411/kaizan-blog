@@ -888,3 +888,13 @@ main img { cursor: zoom-in; }
   font-size: 1.2rem;
   color: var(--accent);
 }
+
+.site-logo {
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
