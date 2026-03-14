@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    container_name: blog-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx-logs:/var/log/nginx
+      - ./goaccess-html:/usr/share/nginx/html/analytics
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared-tunnel
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CF_TUNNEL_TOKEN}
+    depends_on:
+      - web
+

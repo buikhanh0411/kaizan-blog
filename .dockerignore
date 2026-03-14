@@ -1,0 +1,9 @@
+node_modules
+_site
+.git
+.gitignore
+.dockerignore
+README.md
+Dockerfile
+# bun.lock  <-- Đã bỏ chặn file này để Docker có thể sử dụng
+package-lock.json
