@@ -4,10 +4,6 @@ description: "Blog cá nhân của Kaizan. Nơi ghi chép những trải nghiệ
 layout: layout.njk
 ---
 
-<div style="text-align: center; margin-bottom: 2rem;">
-  <img src="/images/logo.jpg" alt="Kaizan Logo" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #eee;">
-</div>
-
 # Chào, mình là Kaizan (Khanh) :)
 
 <div style="margin: 2rem 0;">
